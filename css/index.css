@@ -6,11 +6,15 @@
   list-style: none;
 }
 
+/* section {
+  position: relative;
+} */
+
 .section__home {
-  height: 80vh;
-  margin: 5vh 10% 5vh 10%;
+  position:relative;
+  min-height: 90vh;
   background: #ff9d0a;
-  border-radius: 10px;
+  padding: 70px 0 0 0;
 }
 
 .section__home-title {

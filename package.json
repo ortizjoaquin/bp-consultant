@@ -1,0 +1,22 @@
+{
+  "name": "bp-consultant",
+  "version": "1.0.0",
+  "description": "info and contact website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ortizjoaquin/bp-consultant.git"
+  },
+  "author": "joaquinortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ortizjoaquin/bp-consultant/issues"
+  },
+  "homepage": "https://github.com/ortizjoaquin/bp-consultant#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
