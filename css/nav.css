@@ -1,0 +1,52 @@
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: #c50000;
+  height: 10vh;
+}
+
+.nav__desktop-title {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  flex-wrap: wrap;
+  margin: 0 0 0 10%;
+}
+
+.nav__desktop-title h1 {
+color: #fffdef;
+font-size: 2rem;
+}
+
+.nav__desktop-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 10% 0 10%;
+}
+
+.nav__desktop-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  color: #fffdef;
+  text-decoration: none;
+}
+
+.nav__desktop-li {
+  margin: 0 0 0 1rem;
+}
+
+.nav__desktop-ul a {
+  color: #fffdef;
+  text-decoration: none;
+}
