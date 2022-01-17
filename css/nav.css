@@ -28,7 +28,6 @@ font-size: 2rem;
 .nav__desktop-container {
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
   width: 60%;
   margin: 0 10% 0 10%;
 }
@@ -37,13 +36,14 @@ font-size: 2rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   color: #fffdef;
   text-decoration: none;
 }
 
 .nav__desktop-li {
   margin: 0 0 0 1rem;
+  flex-wrap: wrap;
 }
 
 .nav__desktop-ul a {

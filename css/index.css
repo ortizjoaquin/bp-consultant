@@ -2,6 +2,8 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 .section__home {
@@ -23,18 +25,73 @@
 }
 
 .section__home-body-txt {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-align: justify;
 }
 
-/* .section__about-us {
-  height: 80vh;
-  border-top: 12vh solid white;
-  margin: 0 10% 6vh 10%;
-  background: #ff9d0a;
-  border-radius: 10px;
-} */
-
 .container {
   padding-top: 10vh;
+}
+
+/* CONTACT STYLES*/
+
+.section__contact-body h3 {
+  font-size: 1.8rem;
+  margin: 0 0 2vh 0;
+}
+
+.section__contact-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5% 5% 5% 5%;
+}
+
+.section__contact-body-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 3vh 0;
+}
+
+/* FORM STYLES */
+
+.section__contact-body-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto ;
+}
+
+.section__contact-body-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
+}
+
+.section__contact-body-form form p {
+margin: 0;
+}
+
+.section__contact-body-info li {
+  margin: .3vh 0 0 0;
+  }
+
+.section__contact-body-form form label {
+  margin: .3vh 0 .3vh 0;
+  display: block;
+}
+
+.section__contact-body-form .full-width {
+  grid-column: 1 / 3;
+}
+
+.section__contact-body-form form button, .section__contact-body-form form input, .section__contact-body-form form textarea {
+  width: 100%;
+  padding: .5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.section__contact-body-form form textarea {
+  height: 7rem;
+  resize: none;
 }
