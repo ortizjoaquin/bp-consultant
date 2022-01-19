@@ -1,7 +1,9 @@
 const { Router } = require('express');
+const nodemailer = require('nodemailer');
+require('dotenv').config({path: 'variables.env'})
 const router = Router();
 
-router.post('/send-email', (req, res) => {
+router.post('/send-email', async (req, res) => {
   const { name, company, email, phone, message } = req.body;
 
   contentHTML = `
@@ -16,7 +18,24 @@ router.post('/send-email', (req, res) => {
     <p>${message}</p>
   `;
 
-  console.log('content', contentHTML);
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.MAIL_USERNAME,
+      pass: process.env.MAIL_PASSWORD,
+    }
+  });
+
+  const info = await transporter.sendMail({
+    from: "'agence b+p contact' <agencebpcontact@gmail.com>",
+    to: 'agencebp@agencebp.net',
+    subject: 'Website Contact',
+    html: contentHTML
+  });
+
+  console.log('Message sent', info.messageId);
 
   res.send('recieved');
 })
