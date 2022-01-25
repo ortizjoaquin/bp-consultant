@@ -10,7 +10,7 @@
   position:relative;
   min-height: 100vh;
   background: #ff9d0a;
-  padding: 70px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
 .section__home-title {
@@ -20,7 +20,7 @@
 }
 
 .section__home-body {
-  width: 35%;
+  width: auto;
   margin: 5%;
 }
 
@@ -118,4 +118,11 @@ margin: 0;
   background: #e70000;
   cursor: pointer;
   transition: ease-in-out .2s;
+}
+
+@media only screen and (min-width: 768px) {
+  .section__home-body {
+    width: 35%;
+    margin: 5%;
+  }
 }
