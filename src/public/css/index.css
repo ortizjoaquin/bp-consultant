@@ -15,13 +15,13 @@
 
 .section__home-title {
   display: inline-block;
-  font-size: 2.7rem;
-  margin: 5% 0 0 5%;
+  font-size: 2rem;
+  padding: 5% 0 0 5%;
 }
 
 .section__home-body {
   width: auto;
-  margin: 5%;
+  padding: 5%;
 }
 
 .section__home-body-txt {
