@@ -1,0 +1,124 @@
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}
+
+.header__mobile {
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #c50000;
+  height: 70px;
+  width: 100%;
+}
+
+.header__mobile-title h1 {
+  color: #fffdef;
+  font-size: 1.6rem;
+  margin: 0 5% 0 5%;
+}
+
+.header__mobile-sidepanel{
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 70px;
+  transition: 0.5s;
+}
+
+.header__mobile-sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  transition: 0.3s;
+}
+
+.header__mobile-openbtn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: none;
+  color: white;
+  border: none;
+  margin: 0 0 0 5%;
+}
+
+.header__mobile-closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.header__desktop {
+  display:none;
+  z-index: 10;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #c50000;
+  height: 70px;
+  width: 100%;
+}
+
+.header__desktop-title {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  flex-wrap: wrap;
+  margin: 0 0 0 10%;
+}
+
+.header__desktop-title h1 {
+color: #fffdef;
+font-size: 2rem;
+}
+
+.header__desktop-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  margin: 0 10% 0 10%;
+}
+
+.header__desktop-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+  color: #fffdef;
+  text-decoration: none;
+}
+
+.header__desktop-li {
+  margin: 0 0 0 1rem;
+  flex-wrap: wrap;
+}
+
+.header__desktop-ul a {
+  color: #fffdef;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .header__desktop {
+    display: flex;
+  }
+  .header__mobile {
+    display: none;
+  }
+}
