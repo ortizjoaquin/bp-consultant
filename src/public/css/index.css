@@ -9,19 +9,18 @@
 .section__home {
   position:relative;
   min-height: 100vh;
-  background: #ff9d0a;
-  padding: 60px 0 0 0;
+  padding: 70px 0 0 0;
 }
 
 .section__home-title {
   display: inline-block;
   font-size: 2rem;
-  padding: 5% 0 0 5%;
+  padding: 4vw 0 0 5vw;
 }
 
 .section__home-body {
   width: auto;
-  padding: 5%;
+  padding: 3vh 5vw;
 }
 
 .section__home-body-txt {
@@ -123,6 +122,5 @@ margin: 0;
 @media only screen and (min-width: 768px) {
   .section__home-body {
     width: 35%;
-    margin: 5%;
   }
 }

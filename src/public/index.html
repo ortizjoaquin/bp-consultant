@@ -22,21 +22,21 @@
       </h1>
     </div>
     <div id="mobileSidepanel" class="header__mobile-sidepanel">
-      <a href="javascript:void(0)" class="header__mobile-closebtn" onclick="closeNav()">
+      <button href="javascript:void(0)" class="header__mobile-closebtn" onclick="closeNav()">
         &times;
-      </a>
-      <a href="#home">
+      </button>
+      <button onclick="document.getElementById('home').scrollIntoView(); closeNav()">
         Home
-      </a>
-      <a href="#about-us">
+      </button>
+      <button onclick="document.getElementById('about-us').scrollIntoView(); closeNav()">
         About
-      </a>
-      <a href="#our-projects">
+      </button>
+      <button onclick="document.getElementById('our-projects').scrollIntoView(); closeNav()">
         Projects
-      </a>
-      <a href="#contact-us">
+      </button>
+      <button onclick="document.getElementById('contact-us').scrollIntoView(); closeNav()">
         Contact
-      </a>
+      </button>
     </div>
   </header>
   <header class="header__desktop">
@@ -48,24 +48,24 @@
     <div class="header__desktop-container">
       <ul class="header__desktop-ul">
         <li class="header__desktop-li">
-          <a href="#home">
+          <button onclick="document.getElementById('home').scrollIntoView();">
             Home
-          </a>
+          </button>
         </li>
         <li class="header__desktop-li">
-          <a href="#about-us">
+          <button onclick="document.getElementById('about-us').scrollIntoView();">
             About us
-          </a>
+          </button>
         </li>
         <li class="header__desktop-li">
-          <a href="#our-projects">
+          <button onclick="document.getElementById('our-projects').scrollIntoView();">
             Our projects
-          </a>
+          </button>
         </li>
         <li class="header__desktop-li">
-          <a href="#contact-us">
-            Contact
-          </a>
+          <button onclick="document.getElementById('contact-us').scrollIntoView();">
+            Contact us
+          </button>
         </li>
       </ul>
     </div>
@@ -103,7 +103,7 @@
     </div>
     <div class="section__home" id="contact-us">
       <h2 class="section__home-title">
-        Contact
+        Contact us
       </h2>
       <div class="section__contact-body">
         <div class="section__contact-body-info">
