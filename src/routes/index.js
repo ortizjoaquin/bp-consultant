@@ -30,7 +30,7 @@ router.post('/send-email', async (req, res) => {
 
   const info = await transporter.sendMail({
     from: "'agence b+p contact' <agencebpcontact@gmail.com>",
-    to: 'agencebp@agencebp.net',
+    to: process.env.MAIL_RECEIVER,
     subject: 'Website Contact',
     html: contentHTML
   });
