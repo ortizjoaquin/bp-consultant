@@ -48,20 +48,20 @@
 
 .section__contact-body h3 {
   font-size: 1.8rem;
-  margin: 0 0 2vh 0;
+  padding: 2vh 0 1vh 0;
 }
 
 .section__contact-body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 5% 5% 5% 5%;
+  padding: 3vh 5vw;
 }
 
 .section__contact-body-info {
   display: flex;
   flex-direction: column;
-  margin: 0 10% 3vh 0;
+  padding: 0 10vh 5vh 0
 }
 
 /* FORM STYLES */
@@ -75,7 +75,7 @@
 .section__contact-body-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 16px;
 }
 
 .section__contact-body-form form p {
