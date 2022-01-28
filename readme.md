@@ -1,13 +1,24 @@
 # b+p consultant
 This is a project I'm working on for a info website for my aunt's architecture studio in France.
-The idea is to make it all in plane html, css and javascript, and then start adding complexity, maybe addapting it to react.
 
-# Info
-The website is for info and contact only, the contact funcionality is based upon nodemailer, so you wont be able to test it as the keys to the transport account are inside an .env file and it's gitignored.
-Right now it's lacking of any real content and is only a template (no images, no real text, etc).
+## About
+I'm building the website on plain HTML, CSS, and JavaScript, using Node.js as the environment for the server-side functionalities (wich by now it's only the e-mail sending).
+The final project should also be fully responsive and mobile-first-designed.
+Also, i'm thinking on adapting it to React in the future.
 
-# Author
+## Dependencies used:
+
+- "body-parser"
+- "dotenv"
+- "express"
+- "nodemailer"
+- "nodemon" (devDependency)
+
+## Heroku deployment:
+You can check the deployment [in this link](https://bp-consultant.herokuapp.com/).
+
+#### Author
 Joaquin Ortiz
 
-# Start date
+#### Start date
 13/01/2022
